@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--
+        head = cabeça do site
+        body = corpo do site
+        icon = icone
+        header = cabeçalho
+        main = principal
+        section = secção
+        h1, h2, h3, h4, h5, h6 = hipertexto do 1 ao 6 (maior para o menor)
+        ul = lista desordenada
+        ol = lista ordenada
+        li = lista
+        id = identificador
+
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Dead By Daylight - SZPC</title>
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="./src/css/estilos.css">
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/Emblem.png" alt="Logo Dbd">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+          <h1 class="titulo"> Selecione um  Assassino </h1>
+          <ul class="lista-de-personagens">
+            <li class="personagem selecionado" id="artista" data-name="Artista" data-description="A Artista é uma Assassina de reconhecimento de longo alcance, capaz de lançar Corvos Cruéis pelo Mapa para revelar e atacar Sobreviventes.">
+                <img src="./src/imagens/card-artista.jpg" alt="A Artista">
+            </li>
+
+            <li class="personagem" id="cacadora" data-name="Cacadora" data-description="A Caçadora é uma Assassina de longo alcance, capaz de lançar Machadinhas de Caça nos Sobreviventes para feri-los à distância.">
+                <img src="./src/imagens/card-cacadora.jpg" alt="A Caçadora">
+            </li>
+
+            <li class="personagem" id="porca" data-name="Porca" data-description="A Porca é uma Assassina perturbadora, capaz de se agachar de modo furtivo e emboscar Sobreviventes a uma curta distância. Ela também pode usar Armadilhas de Urso Reversas em Sobreviventes derrubados, forçando-os a removê-las antes que o tempo acabe, resultando numa morte instantânea.">
+                <img src="./src/imagens/card-porca.jpg" alt="A Porca">
+            </li>
+
+            <li class="personagem" id="enfermeira" data-name="Enfermeira" data-description="A Enfermeira é uma Assassina com teletransporte, capaz de atravessar obstáculos e rapidamente cobrir distâncias com seu Poder, o Último Suspiro de Spencer.">
+                <img src="./src/imagens/card-enfermeira.jpg" alt="A Enfermeira">
+            </li>
+
+            <li class="personagem" id="espirito" data-name="Espirito" data-description="O Espírito é uma Assassina que se teleporta, capaz de pegar Sobreviventes de surpresa com seu poder de travessia, Assombração dos Yamaoka. Seu poder permite que elas se teleporte de um lugar para outro sem ser vista.">
+                <img src="./src/imagens/card-espirito.jpg" alt="O Espirito">
+            </li>
+
+            <li class="personagem" id="bruxa" data-name="Bruxa" data-description="A Bruxa é uma Assassina amaldiçoada, capaz de colocar Armadilhas e se teletransportar até elas quando ativada, usando seu Catalisador Escurecido.">
+                <img src="./src/imagens/card-bruxa.jpg" alt="A Bruxa">
+            </li>
+
+            <li class="personagem" id="negociante" data-name="Negociante" data-description="A Negociante de Crânios é uma Assassina tática, capaz de posicionar Drones que detectam e debilitam seus alvos.">
+                <img src="./src/imagens/card-negociante.jpg" alt="A Negociadora de Crânios">
+            </li>
+
+            <li class="personagem" id="praga" data-name="Praga" data-description="A Praga é uma Assassina devota, capaz de infectar Sobreviventes a uma curta distância usando seu Poder, Vile Purge. Os sobreviventes infligidos por essa contaminação correm o risco de se machucar ou quebrar, a menos que encontrem uma maneira de se curar em uma Piscina de Devoção.">
+                <img src="./src/imagens/card-praga.jpg" alt="A Praga">
+            </li>
+
+            <li class="personagem" id="draga" data-name="Draga" data-description="A Draga é uma manifestação dos pensamentos sombrios de uma comunidade outrora vibrante, capaz de se teletransportar entre Lockers e invocar uma escuridão avassaladora.">
+                <img src="./src/imagens/card-draga.jpg" alt="A Draga">
+            </li>
+
+            <li class="personagem" id="singularidade" data-name="Singularidade" data-description="A Singularidade é um Assassino implacável, capaz de lançar Biopods para se mover rapidamente pelo mapa.">
+                <img src="./src/imagens/card-singularidade.jpg" alt="A Singularidade">
+            </li>
+
+            <li class="personagem" id="gemeos" data-name="Gemeos" data-description="Os gêmeos são um par cooperativo de Assassinos, capazes de dividir e caçar juntos usando seu Poder, Vínculo de Sangue.">
+                <img src="./src/imagens/card-gemeos.jpg" alt="Os Gêmeos">
+            </li>
+
+            <li class="personagem" id="samara" data-name="Samara" data-description="A Onryō é uma fantasma vingativa imbuída do poder de Nensha, a Onryō é capaz de atravessar silenciosa e invisivelmente o Reino, manifestando-se quando está pronta para atacar.">
+                <img src="./src/imagens/card-samara.jpg" alt="A Onryō">
+            </li>
+          </ul>
+      </section>
+
+      <section class="personagem-selecionado">
+        <img class="personagem-grande" src="./src/imagens/card-artista.png" alt="Personagem Selecionado">
+
+        <div class="informacoes-personagem">
+            <h2 class="nome-personagem" id="nome-personagem">Artista</h2>
+            <p class="descricao-personagem" id="descricao-personagem">A Artista é uma Assassina de reconhecimento de longo alcance, capaz de lançar Pássaros do Tormento pelo Mapa para revelar e atacar Sobreviventes.</p>
+        </div>
+      </section>
+    </main>
+
+<script src="./src/js/index.js"></script>
+
+</body>
+</html>

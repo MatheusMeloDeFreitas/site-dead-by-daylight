@@ -1,0 +1,17 @@
+/*
+margin = espaçamento, margem entre os elementos
+box-sizing = espaçamento interno entre o conteudo e a borda.
+font-size = tamanho de fonte
+.qualquer coisa = estiliza a classe
+ * = funciona para todas as tag
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
